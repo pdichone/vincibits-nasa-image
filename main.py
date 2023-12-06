@@ -71,9 +71,7 @@ def create_pdf_with_image_and_text(image_path, text, pdf_filename):
 
 
 def main():
-    NASA_API_KEY = (
-        "UB2PwyfByObM5eXtUCukfGWjduQYaNvmq01Pr1Oc"  # Replace with your NASA API key
-    )
+    NASA_API_KEY = "Your API Here"  # Replace with your NASA API key
     image_url, description, date = fetch_nasa_image_and_description(NASA_API_KEY)
 
     image_path = save_image_from_url(image_url, "nasa_image.jpg")
